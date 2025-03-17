@@ -7,8 +7,6 @@ This project implements reinforcement learning-based Multi-Armed Bandit (MAB) al
 2. **Content Personalization Bandit**: Recommending personalized content to enhance user engagement.
 
 The project explores different MAB algorithms, balancing exploration (trying new strategies) and exploitation (leveraging known successful strategies) to improve performance over time.
-
-## Why This is Relevant
 Multi-Armed Bandit algorithms are widely used in online advertising, recommendation systems, A/B testing, and adaptive clinical trials. By optimizing decision-making, businesses can maximize conversions, enhance user satisfaction, and improve revenue generation. This project demonstrates how reinforcement learning techniques can be applied to practical problems involving uncertainty and real-time decision-making.
 
 ## Features
