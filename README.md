@@ -1,7 +1,5 @@
 # Reinforcement Learning Multi-Armed Bandit (MAB)
 
-A modular Python project for experimenting with Multi-Armed Bandit algorithms for advertisement and content personalization. Designed for scalability, deployment, and recruiter-friendliness.
-
 ## Project Structure
 ```
 ├── src/                       # Core modules and bandit logic
