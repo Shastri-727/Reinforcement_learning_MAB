@@ -38,10 +38,6 @@
 - Epsilon-Greedy, UCB1, Bayesian UCB, and Thompson Sampling algorithms
 - Ready for deployment and scaling
 
-## Deployment
-- Add a `Dockerfile` or cloud deployment instructions as needed
-- Use the modular structure for integration into larger systems
-
 ## Contributing
 - Fork the repo, create a feature branch, and submit a pull request
 - Add tests in the `tests/` folder
