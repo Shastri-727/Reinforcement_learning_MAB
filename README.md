@@ -1,43 +1,55 @@
-# Multi-Armed Bandits for Advertisement and Content Personalization
+# Reinforcement Learning Multi-Armed Bandit (MAB)
 
-This repository contains implementations and experiments on multi-armed bandit (MAB) algorithms for two classic web applications:
-- **Online Advertisement Placement**
-- **Content Personalization**
+A modular Python project for experimenting with Multi-Armed Bandit algorithms for advertisement and content personalization. Designed for scalability, deployment, and recruiter-friendliness.
 
-The project compares the performance of several popular bandit algorithms on simulated environments representative of these applications, thus allowing us to evaluate strategies such as ε-Greedy, UCB1, Bayesian UCB, and Thompson Sampling.
+## Project Structure
+```
+├── src/                       # Core modules and bandit logic
+│   ├── bandits.py
+│   ├── advertisementBandit.py
+│   ├── advertisementBandit_Solvers.py
+│   ├── contentPersonalizationBandit.py
+│   └── contentPersonalizationBandit_Solvers.py
+├── scripts/                   # Run scripts for experiments
+│   ├── run_mab_advertisement.py
+│   └── run_mab_personalization.py
+├── tests/                     # Unit tests (add your tests here)
+├── Results/                   # Output plots and results
+├── requirements.txt           # Python dependencies
+├── .gitignore                 # Ignore unnecessary files
+└── README.md                  # Project overview and instructions
+```
 
-## Table of Contents
+## Getting Started
 
-- [Overview](#overview)
-- [Bandit Modules](#bandit-modules)
-- [Algorithms Implemented](#algorithms-implemented)
-- [Installation](#installation)
-- [Usage](#usage)
-  - [Advertisement Bandit](#advertisement-bandit)
-  - [Content Personalization Bandit](#content-personalization-bandit)
-- [Results](#results)
-- [File Structure](#file-structure)
-- [License](#license)
+1. **Clone the repository**
+2. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. **Run experiments**
+   ```bash
+   python scripts/run_mab_advertisement.py
+   python scripts/run_mab_personalization.py
+   ```
+   Output plots will be saved in the `Results/` folder.
 
-## Overview
+## Features
+- Modular codebase for easy extension
+- Advertisement and content personalization bandit solvers
+- Epsilon-Greedy, UCB1, Bayesian UCB, and Thompson Sampling algorithms
+- Ready for deployment and scaling
 
-Multi-armed bandit algorithms are crucial for sequential decision-making where exploration–exploitation trade-offs arise. This repository demonstrates how core algorithms perform in scenarios like ad click-through optimization and personalized content recommendation.
+## Deployment
+- Add a `Dockerfile` or cloud deployment instructions as needed
+- Use the modular structure for integration into larger systems
 
-## Bandit Modules
+## Contributing
+- Fork the repo, create a feature branch, and submit a pull request
+- Add tests in the `tests/` folder
 
-- **AdvertisementBandit:** Models online ad placements, with each arm representing a different ad slot, each having an unknown probability of reward (click).
-- **ContentPersonalizationBandit:** Models different content categories for personalization, each with an unknown engagement probability.
-
-## Algorithms Implemented
-
-- **ε-Greedy:** Explores randomly with probability ε, otherwise exploits the current best arm.
-- **UCB1 (Upper Confidence Bound):** Balances exploration and exploitation using confidence intervals.
-- **Bayesian UCB:** Uses Bayesian inference with a Beta prior.
-- **Thompson Sampling:** Selects arms according to their probability of being optimal, estimated via posterior sampling.
-
-## Installation
-
-Clone this repository and install the required dependencies.
+## License
+MIT
 
 ```bash
 git clone https://github.com/Shastri-727/Reinforcement_learning_MAB.git
